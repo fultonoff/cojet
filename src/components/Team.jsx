@@ -4,7 +4,7 @@ import { users } from "@/app/hoc/data";
 
 const Team = () => {
   return (
-    <section className="center">
+    <section className="center" id="team">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl sm:text-[48px] tracking-tight font-Playfair text-darkbg">

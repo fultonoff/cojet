@@ -32,7 +32,7 @@ export default function Nav() {
         color="white"
         className="p-1 font-normal"
       >
-        <Link href="#" className="flex items-center font-Mulish text12">
+        <Link href="#service" className="flex items-center font-Mulish text12 ">
           Service
         </Link>
       </Typography>
@@ -52,7 +52,7 @@ export default function Nav() {
         color="white"
         className="p-1 font-normal"
       >
-        <Link href="#" className="flex items-center font-Mulish text12">
+        <Link href="#team" className="flex items-center font-Mulish text12">
           Team
         </Link>
       </Typography>
@@ -62,7 +62,7 @@ export default function Nav() {
         color="white"
         className="p-1 font-normal"
       >
-        <Link href="#" className="flex items-center font-Mulish text12">
+        <Link href="#contact" className="flex items-center font-Mulish text12">
           Contact
         </Link>
       </Typography>
@@ -82,13 +82,13 @@ export default function Nav() {
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden sm:block">{navList}</div>
-            <Button
+            <Link
+              href='#book'
               
-              
-              className="hidden sm:inline-block rouned5 bg-gold hover:shadow-0 shadow-none font-Mulish hover:bg-white hover:text-gold transtion-all ease-in-out duration-200"
+              className="hidden rounded5 sm:inline-block rouned5 bg-gold hover:shadow-0 shadow-none font-Mulish hover:bg-white hover:text-gold transtion-all ease-in-out duration-200 px-4 py-2"
             >
-              <span>Download Now</span>
-            </Button>
+              <span>Book Now</span>
+            </Link>
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent sm:hidden"

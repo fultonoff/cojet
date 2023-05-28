@@ -3,6 +3,7 @@
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import logo from '../images/logoFly1.png'
+import Link from "next/link";
  
 export default function Footer() {
   return (
@@ -11,44 +12,44 @@ export default function Footer() {
         <Image src={logo} alt="logo" className="w-20" />
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8 text-white font-Mulish">
           <li>
-            <Typography
-              as="a"
-              href="#"
+            <Link
               
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              href="#service"
+              
+              className="font-Mulish transition-colors hover:text-gold focus:text-gold"
             >
-              About Us
-            </Typography>
+              Service
+            </Link>
           </li>
           <li>
-            <Typography
-              as="a"
-              href="#"
+            <Link
               
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              href="#about"
+              
+              className="font-Mulish transition-colors hover:text-gold focus:text-gold"
             >
-              License
-            </Typography>
+              About
+            </Link>
           </li>
           <li>
-            <Typography
-              as="a"
-              href="#"
+            <Link
               
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              href="#team"
+              
+              className="font-Mulish transition-colors hover:text-gold focus:text-gold"
             >
-              Contribute
-            </Typography>
+              Team
+            </Link>
           </li>
           <li>
-            <Typography
-              as="a"
-              href="#"
+            <Link
               
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              href="#contact"
+              
+              className="font-Mulish transition-colors hover:text-gold focus:text-gold"
             >
-              Contact Us
-            </Typography>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

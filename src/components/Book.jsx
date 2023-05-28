@@ -6,7 +6,7 @@ import BookForm from './BookForm'
 
 const Book = () => {
   return (
-    <section className='bg-darkbg w-full py-[70px] '>
+    <section className='bg-darkbg w-full py-[70px] ' id='book'>
         <div className='flex justify-center items-center'>
 
       <div className='center text-center text-white'>

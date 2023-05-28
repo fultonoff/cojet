@@ -10,6 +10,7 @@ import {
     Typography,
     Button
   } from "@material-tailwind/react";
+import Link from "next/link";
    
   export default function RouteCard() {
     return (
@@ -17,7 +18,7 @@ import {
         <div className="center grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 mt-[60px]">
         {routes.map((route)=>{
             return (
-      <Card className="mt-6 w-full bg-darkbg" key={route.id}>
+      <Card className="mt-6 w-full bg-darkbg flex flex-col justify-between" key={route.id}>
         <CardHeader  className="relative h-56 shadow-none">
           <Image src={route.image} alt="image jet" className="object-cover h-full w-full" />
         </CardHeader>
@@ -30,7 +31,7 @@ import {
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">
-          <Button className="rounded5 bg-gold hover:shadow-0 shadow-none font-Mulish hover:bg-white hover:text-gold transtion-all ease-in-out duration-200">Book now</Button>
+          <Link href='#book' className="rounded5 bg-gold hover:shadow-0 shadow-none font-Mulish hover:bg-white hover:text-gold transtion-all ease-in-out duration-200 text-white px-4 py-2">Book now</Link>
         </CardFooter>
       </Card>
 

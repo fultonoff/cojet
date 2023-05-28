@@ -5,7 +5,7 @@ import Maps from './Maps'
 
 const Contact = () => {
   return (
-    <section className='bg-darkbg py-[70px]'>
+    <section className='bg-darkbg py-[70px]' id='contact'>
       <div className='center text-white'>
         <h2 className='text-[30px] font-Playfair text-center'>Contact Us</h2>
         <p className='text-center max-w-2xl mx-auto'>Connect with us today! Our contact section is your gateway to reaching our team. Whether you have questions, inquiries, or seek collaborations, we are here to assist you.</p>

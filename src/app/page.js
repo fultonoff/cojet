@@ -14,16 +14,16 @@ import AppComponent from "@/components/AppComponent";
 
 
 
+
 export default function Home() {
   return (
-
+      
+      
     <div>
       <Head>
         <title>My page title</title>
       </Head>
-
     <main>
-      
       <Hiro />
       <Book />
       <About/>
@@ -35,7 +35,7 @@ export default function Home() {
       <Team/>
       <Contact/>
     </main>
-
     </div>
+    
   );
 }
