@@ -36,7 +36,7 @@ const Hiro = () => {
 
           <div className="mt-[50px]">
             <Link
-              href="/"
+              href="#book"
               className="text-[14px] rounded5 bg-gold hover:shadow-0 shadow-none font-Mulish hover:bg-white hover:text-gold transtion-all ease-in-out duration-200 px-8 py-4"
             >
               Book now
