@@ -17,12 +17,12 @@ const AppComponent = () => {
             />
           </div>
         </div>
-        <div className="center absolute left-1/2 -translate-x-1/2 sm:left-0 sm:-translate-x-0">
-          <h1 className="text-white font-Playfair text-md sm:text-[29px] max-w-xl text-center sm:text-left">
+        <div className="center absolute w-full left-1/2 -translate-x-1/2 sm:left-0 sm:-translate-x-0">
+          <h1 className="text-white font-Playfair text-md sm:text-[29px] w-full sm:max-w-xl text-center sm:text-left">
             Download the Airly app today and transform your A to B.
           </h1>
           <div className="mx-auto text-center w-full sm:text-left mt-10">
-        <Link href='#book' className='rounded5 mt-5 bg-white hover:shadow-0 text-gold hover:text-white shadow-none font-Mulish hover:border border border-transparent hover:border-white hover:bg-gold px-8 py-4 transtion-all ease-in-out duration-200'>Book a private jet</Link>
+        <Link href='#book' className='rounded5 whitespace-nowrap mt-5 bg-white hover:shadow-0 text-gold hover:text-white shadow-none font-Mulish hover:border border border-transparent hover:border-white hover:bg-gold sm:px-8 sm:py-4 p-2 transtion-all ease-in-out duration-200'>Book a private jet</Link>
 
           </div>
         </div>

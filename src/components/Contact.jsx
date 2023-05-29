@@ -15,9 +15,9 @@ const Contact = () => {
 
                     <div className='w-full flex flex-col gap-4'>
                     <Input color='amber' variant='standard' label='Full name' required type="text" className='w-full'/>
-                    <Input color='amber' variant='standard' label='Email' required type="text" className='text-white'/>
-                    <Input color='amber' variant='standard' label='Full name' required type="text" className='text-white'/>
-                    <Textarea color='amber' variant="standard" label="Standard" required/>
+                    <Input color='amber' variant='standard' label='Email' required type="text" className='text-white w-full'/>
+                    <Input color='amber' variant='standard' label='Full name' required type="text" className='text-white w-full'/>
+                    <Textarea color='amber' variant="standard" label="Standard" required className='w-full'/>
 
                     </div>
 
