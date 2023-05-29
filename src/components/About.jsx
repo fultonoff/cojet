@@ -11,7 +11,7 @@ const About = () => {
             Private aviation made simple
           </h1>
           <p>
-            In 2015 COJETlaunched with a vision to make flying private simple to
+            In 2020 COJETlaunched with a vision to make flying private simple to
             understand, accessible to more, and at a palatable price point. We
             make the awkward trips easy. We put you back in control of your
             schedule. We get you home in time for dinner. Our focus is, was, and
