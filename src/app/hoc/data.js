@@ -18,7 +18,7 @@ import why4 from '../../images/whyus/whyus4.jpg'
 
 // Team members
 
-import teamuser1 from '../../images/team/teamuser1.jpg'
+import teamuser1 from '../../images/team/teamuser1b.jpeg'
 import teamuser2 from '../../images/team/teamuser2.jpeg'
 import teamuser3 from '../../images/team/teamuser3.jpeg'
 
@@ -110,7 +110,7 @@ export const users = [
     },
     {
         nom: 'Zynell Zuh',
-        role: 'Coo Africa',
+        role: 'CMO',
         image: teamuser3,
         id: 3,
         facebook: 'https://www.facebook.com',
