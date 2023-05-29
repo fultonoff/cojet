@@ -21,6 +21,7 @@ import why4 from '../../images/whyus/whyus4.jpg'
 import teamuser1 from '../../images/team/teamuser1b.jpg'
 import teamuser2 from '../../images/team/teamuser2.jpeg'
 import teamuser3 from '../../images/team/teamuser3.jpeg'
+import teamuser4 from '../../images/team/teamuser4.jpeg'
 
 
 
@@ -103,6 +104,15 @@ export const users = [
         nom: 'Augustine Ewiah',
         role: 'Director',
         image: teamuser2,
+        id: 2,
+        facebook: 'https://www.facebook.com',
+        instagram: 'https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D',
+        description: 'Bonnie drives the technical strategy of the fly platform and brand.'
+    },
+    {
+        nom: 'Joshua D. Goodrich',
+        role: 'Commercial director',
+        image: teamuser4,
         id: 2,
         facebook: 'https://www.facebook.com',
         instagram: 'https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D',
