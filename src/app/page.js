@@ -11,6 +11,8 @@ import Feature from "@/components/Feature";
 import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import AppComponent from "@/components/AppComponent";
+import Whatsapp from "@/components/Whatsapp";
+
 
 
 
@@ -34,6 +36,7 @@ export default function Home() {
       <Feature />
       <Team/>
       <Contact/>
+      <Whatsapp/>
     </main>
     </div>
     

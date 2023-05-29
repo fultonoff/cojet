@@ -5,18 +5,18 @@ const apiUrl = process.env.MAP_API
 import Map, { Marker, NavigationControl, ScaleControl } from "react-map-gl";
 
 
+const lng = -2
+const lat = 8
 const Maps = () => {
-  const lng = 5.6037
-  const lat = 0.1870
 
   return (
     <div className='h-full'>
        <Map className="w-full h-full"
-        mapboxAccessToken = 'pk.eyJ1IjoiZnVsdG9uIiwiYSI6ImNsaTdjdGt2bDBudjMza2x1OWUwMTFjNHUifQ.rRf0D7aWfixmEU9ZcN1t2A'
+        mapboxAccessToken = {process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
         initialViewState={{
-          longitude: lng,
-          latitude: lat,
-          zoom: 15
+          longitude: -2,
+          latitude: 8,
+          zoom: 5
           
           
         }}
@@ -29,6 +29,7 @@ const Maps = () => {
     
 
     <NavigationControl />
+    <ScaleControl />
       </Map>
     </div>
   )
