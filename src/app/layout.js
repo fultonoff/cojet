@@ -12,9 +12,8 @@ export default function RootLayout({ children }) {
   return (
       
     <html lang="en" >
-       <Head>
-        <title>My page title</title>
-      </Head>
+        <title>COJET</title>
+      
       <body className='scrollbar scrollbar-thin scrollbar-thumb-gold scrollbar-track-white'>
         <Nav/>
         {children}
