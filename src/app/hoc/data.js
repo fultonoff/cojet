@@ -18,7 +18,7 @@ import why4 from '../../images/whyus/whyus4.jpg'
 
 // Team members
 
-import teamuser1 from '../../images/team/teamuser1b.jpeg'
+import teamuser1 from '../../images/team/teamuser1b.jpg'
 import teamuser2 from '../../images/team/teamuser2.jpeg'
 import teamuser3 from '../../images/team/teamuser3.jpeg'
 
