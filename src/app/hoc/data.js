@@ -1,9 +1,4 @@
 
-
-import user1 from '../../images/users/alex-suprun.jpg'
-import user2 from '../../images/users/alexander.jpg'
-
-
 // Routes images
 
 import routeimg1 from '../../images/route/routeimg1.jpg'
@@ -18,6 +13,14 @@ import why1 from '../../images/whyus/whyus1.jpg'
 import why2 from '../../images/whyus/whyus2.jpg'
 import why3 from '../../images/whyus/whyus3.jpg'
 import why4 from '../../images/whyus/whyus4.jpg'
+
+
+
+// Team members
+
+import teamuser1 from '../../images/team/teamuser1.jpg'
+import teamuser2 from '../../images/team/teamuser2.jpeg'
+import teamuser3 from '../../images/team/teamuser3.jpeg'
 
 
 
@@ -89,38 +92,30 @@ export const why = [
 export const users = [
     {
         nom: 'Ahmat Tidjani Salim',
-        role: 'CEO',
-        image: user1,
+        role: 'Ceo',
+        image: teamuser1,
         id: 1,
         facebook: 'https://www.facebook.com',
         instagram: 'https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D',
         description: 'Bonnie drives the technical strategy of the fly platform and brand.'
     },
     {
-        nom: 'Bonnie Green',
-        role: 'CEO',
-        image: user2,
+        nom: 'Augustine Ewiah',
+        role: 'Director',
+        image: teamuser2,
         id: 2,
         facebook: 'https://www.facebook.com',
         instagram: 'https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D',
         description: 'Bonnie drives the technical strategy of the fly platform and brand.'
     },
     {
-        nom: 'Bonnie Green',
-        role: 'CEO',
-        image: user1,
+        nom: 'Zynell Zuh',
+        role: 'Coo Africa',
+        image: teamuser3,
         id: 3,
         facebook: 'https://www.facebook.com',
         instagram: 'https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D',
         description: 'Bonnie drives the technical strategy of the fly platform and brand.'
     },
-    {
-        nom: 'Bonnie Green',
-        role: 'CEO',
-        image: user2,
-        id: 4,
-        facebook: 'https://www.facebook.com',
-        instagram: 'https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D',
-        description: 'Bonnie drives the technical strategy of the fly platform and brand.'
-    },
+   
 ]

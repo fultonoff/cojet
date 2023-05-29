@@ -6,8 +6,8 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 const TeamCard = ({data}) => {
   return (
     
-    <div className="items-center w-full rounded5 flex flex-col overflow-hidden rounded5">
-        <div className='w-1.3'>
+    <div className="items-center w-full rounded5 flex flex-col overflow-hidden rounded5 transition-all duration-200 hover:translate-y-2">
+        <div className='w-full h-[500px]'>
 
             <Image className="w-full h-full object-cover" src={data.image} alt="Bonnie Avatar"/>
         </div>
