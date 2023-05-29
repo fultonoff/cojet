@@ -102,7 +102,7 @@ export const users = [
     },
     {
         nom: 'Augustine Ewiah',
-        role: 'Director',
+        role: 'CMO',
         image: teamuser2,
         id: 2,
         facebook: 'https://www.facebook.com',
@@ -111,7 +111,7 @@ export const users = [
     },
     {
         nom: 'Joshua D. Goodrich',
-        role: 'Commercial director',
+        role: 'Commercial director USA',
         image: teamuser4,
         id: 2,
         facebook: 'https://www.facebook.com',
@@ -120,7 +120,7 @@ export const users = [
     },
     {
         nom: 'Zynell Zuh',
-        role: 'CMO',
+        role: 'Merketing director Africa',
         image: teamuser3,
         id: 3,
         facebook: 'https://www.facebook.com',
