@@ -19,6 +19,7 @@ import teamuser2 from "../../images/team/teamuser2.jpeg";
 import teamuser3 from "../../images/team/teamuser3.jpeg";
 import teamuser4 from "../../images/team/teamuser4.jpeg";
 import teamuser5 from "../../images/team/teamuser5.jpeg";
+import teamuser6 from "../../images/team/teamuser6.jpeg";
 
 export const routes = [
   {
@@ -136,6 +137,17 @@ export const users = [
     nom: "Zynell Zuh",
     role: "Marketing director Africa",
     image: teamuser3,
+    id: 3,
+    facebook: "https://www.facebook.com",
+    instagram:
+      "https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+    description:
+      "Bonnie drives the technical strategy of the fly platform and brand.",
+  },
+  {
+    nom: "Coulibaly Saran",
+    role: "Sales rep. Ivory Coast",
+    image: teamuser6,
     id: 3,
     facebook: "https://www.facebook.com",
     instagram:
