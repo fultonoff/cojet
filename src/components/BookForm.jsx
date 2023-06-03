@@ -59,7 +59,7 @@ const BookForm = () => {
     }
 
     // Handle form submission logic here
-    console.log('Form submitted:', { name, email, phoneNumber, departure, arrival, date, passengers });
+    // console.log('Form submitted:', { name, email, phoneNumber, departure, arrival, date, passengers });
   };
 
   return (

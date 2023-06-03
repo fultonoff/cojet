@@ -115,7 +115,7 @@ export const users = [
     nom: "Joshua D. Goodrich",
     role: "Commercial director USA",
     image: teamuser4,
-    id: 2,
+    id: 3,
     facebook: "https://www.facebook.com",
     instagram:
       "https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
@@ -126,7 +126,7 @@ export const users = [
     nom: "MC CALVIN",
     role: "Team manager",
     image: teamuser5,
-    id: 2,
+    id: 4,
     facebook: "https://www.facebook.com",
     instagram:
       "https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
@@ -137,7 +137,7 @@ export const users = [
     nom: "Zynell Zuh",
     role: "Marketing director Africa",
     image: teamuser3,
-    id: 3,
+    id: 5,
     facebook: "https://www.facebook.com",
     instagram:
       "https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
@@ -148,7 +148,7 @@ export const users = [
     nom: "Coulibaly Saran",
     role: "Sales rep. Ivory Coast",
     image: teamuser6,
-    id: 3,
+    id: 6,
     facebook: "https://www.facebook.com",
     instagram:
       "https://www.instagram.com/flycojet/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",

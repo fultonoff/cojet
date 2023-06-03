@@ -11,7 +11,7 @@ import {
   } from "@material-tailwind/react";
    
   export default function WhyusCard({data}) {
-    console.log(data);
+    // console.log(data);
     return (
       <Card className="w-full overflow-hidden shadow-none rounded-none px-0">
         <CardHeader

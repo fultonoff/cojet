@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en" >
         <title>COJET</title>
       
-      <body className='scrollbar scrollbar-thin scrollbar-thumb-gold scrollbar-track-white'>
+      <body className='scrollbar scrollbar-thin scrollbar-thumb-gold scrollbar-track-white '>
         <Nav/>
         {children}
         <Footer/>
