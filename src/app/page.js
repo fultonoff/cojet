@@ -12,8 +12,7 @@ import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import AppComponent from "@/components/AppComponent";
 import Whatsapp from "@/components/Whatsapp";
-
-
+import metadata from '../../metadata.jsx'
 
 
 
@@ -22,9 +21,9 @@ export default function Home() {
       
       
     <div>
-      <Head>
-        <title>My page title</title>
-      </Head>
+      <title>{metadata.title}</title>
+        <meta name="description" content={metadata.openGraph.description} />
+        <meta name="keywords" content={metadata.openGraph.keywords.join(', ')} />
     <main>
       <Hiro />
       <Book />

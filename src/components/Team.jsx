@@ -13,7 +13,7 @@ async function getTeam() {
   });
 
   const response = await client.getEntries({ content_type: 'team' });
-  return response.items;
+  return response.items.reverse()
 }
 
 const Team = async () => {
