@@ -55,3 +55,11 @@
           --scroll-behavior: smooth!important;
           scroll-behavior: smooth!important;
           }
+
+
+.splide__arrow svg{
+  fill: white !important;
+}
+.splide__arrow {
+  background-color: #AC906F !important;
+}

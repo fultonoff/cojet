@@ -13,6 +13,7 @@ import Contact from "@/components/Contact";
 import AppComponent from "@/components/AppComponent";
 import Whatsapp from "@/components/Whatsapp";
 import metadata from '../../metadata.jsx'
+import News from '@/components/News';
 
 
 
@@ -34,6 +35,7 @@ export default function Home() {
       <Whyus/>
       <Feature />
       <Team/>
+      <News />
       <Contact/>
       <Whatsapp/>
     </main>

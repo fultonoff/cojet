@@ -4,8 +4,7 @@ import Link from 'next/link'
 import { AiOutlineInstagram } from 'react-icons/ai';
 
 const TeamCard = ({data, images}) => {
-    console.log(data);
-    console.log(data.image.fields.file.url);
+   
   return (
     
     <div className="items-center w-full rounded5 flex flex-col overflow-hidden rounded5 transition-all duration-200 hover:translate-y-2">
