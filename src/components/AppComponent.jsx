@@ -1,12 +1,13 @@
 import React from "react";
 import imgApp from "../images/appimg.png";
 import Image from "next/image";
-import { Button } from "@material-tailwind/react";
-import Link from "next/link";
+import Reveal from "../app/Hook/useReveal";
+
 
 const AppComponent = () => {
   return (
     <div className="bg-gold">
+      <Reveal>
       <section className="py-[70px] bg-gold relative center">
         <div className="center absolute -top-20 right-0">
           <div className=" w-80 hidden sm:inline-flex">
@@ -27,6 +28,8 @@ const AppComponent = () => {
           </div>
         </div>
       </section>
+
+      </Reveal>
     </div>
   );
 };

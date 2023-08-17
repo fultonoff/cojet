@@ -1,8 +1,9 @@
 import React from "react";
 import TeamCard from "./TeamCard";
-import { users } from "@/app/hoc/data";
-import Loading from "./Loading";
 import { createClient } from 'contentful';
+import LoadingData from '../components/LoadingData'
+import Reveal from "../app/Hook/useReveal";
+
 
 
 
@@ -22,13 +23,15 @@ const Team = async () => {
 
 
   if (!Array.isArray(data)) {
-    return <Loading />;
+    return <LoadingData />;
   }
 
 
    
     return (
       <section className="center" id="team">
+        <Reveal>
+
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl sm:text-[48px] tracking-tight font-Playfair text-darkbg">
@@ -42,11 +45,14 @@ const Team = async () => {
           {data.map((team) => {
             const assetId = team.image.sys.id; // Extract the asset ID
             const imageUrl = `https://cdn.contentful.com/assets/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/${assetId}`;
-            return <TeamCard key={team.id} data={team} images={imageUrl} />;
+            return <div key={teams.id}>
+              <TeamCard data={team} images={imageUrl} />
+            </div> 
           })}
   
           </div>
         </div>
+          </Reveal>
       </section>
     );
 

@@ -3,6 +3,8 @@
 import React from 'react'
 import Image from 'next/image'
 import bg from '../images/histotybg.jpg'
+import Reveal from "../app/Hook/useReveal";
+
 
 const History = () => {
   return (
@@ -13,7 +15,7 @@ const History = () => {
 
       <Image src={bg} alt='history bg' className='w-full h-full object-cover'/>
       </div>
-
+    <Reveal>
       <div className='z-20 w-full relative text-center sm:max-w-4xl mx-auto px-4'>
         <h1 className='font-Playfair text-xl ss:text-4xl sm:text-[51px] text-white mt-[40px] '>‘As a self-made entrepreneur, COJET gives me back control’</h1>
 
@@ -23,6 +25,8 @@ const History = () => {
         <button className='rounded5 bg-white hover:shadow-0 text-gold hover:text-white shadow-none font-Mulish hover:border border border-transparent hover:border-white hover:bg-gold px-8 py-4 transtion-all ease-in-out duration-200'>Read more</button>
       </div>
       </div>
+
+    </Reveal>
     </section>
   )
 }

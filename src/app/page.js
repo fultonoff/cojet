@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import Hiro from "@/components/Hiro";
 import Book from "@/components/Book";
 import About from "@/components/About";
@@ -12,34 +11,31 @@ import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import AppComponent from "@/components/AppComponent";
 import Whatsapp from "@/components/Whatsapp";
-import metadata from '../../metadata.jsx'
-import News from '@/components/News';
-
-
+import metadata from "../../metadata.jsx";
+import News from "@/components/News";
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Home() {
   return (
-      
-      
     <div>
       <title>{metadata.title}</title>
-        <meta name="description" content={metadata.openGraph.description} />
-        <meta name="keywords" content={metadata.openGraph.keywords.join(', ')} />
-    <main>
-      <Hiro />
-      <Book />
-      <About/>
-      <AppComponent/>
-      <Route/>
-      <History/>
-      <Whyus/>
-      <Feature />
-      <Team/>
-      <News />
-      <Contact/>
-      <Whatsapp/>
-    </main>
+      <meta name="description" content={metadata.openGraph.description} />
+      <meta name="keywords" content={metadata.openGraph.keywords.join(", ")} />
+      <main>
+      <div><Toaster/></div>
+        <Hiro />
+        <Book />
+        <About />
+        <AppComponent />
+        <Route />
+        <History />
+        <Whyus />
+        <Feature />
+        <Team />
+        <News />
+        <Contact />
+        <Whatsapp />
+      </main>
     </div>
-    
   );
 }

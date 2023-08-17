@@ -1,6 +1,4 @@
-
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import image from "../images/histotybg.jpg";
@@ -10,28 +8,39 @@ import { AiFillCaretLeft } from "react-icons/ai";
 import Link from "next/link";
 import { createClient } from "contentful";
 import Loading from "./Loading";
-
-async function getBlog() {
-  const client = createClient({
-    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-  });
-
-  const response = await client.getEntries({ content_type: "blogPost" });
-  return response.items;
-}
-
-const News = async () => {
-  const blogs = await getBlog();
-  const data = blogs.map((item) => item.fields);
+import Reveal from "../app/Hook/useReveal";
 
 
-  if ((!data)) {
+const News = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const client = createClient({
+        space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+        accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+      });
+
+      const response = await client.getEntries({ content_type: "blogPost" });
+      const items = response.items;
+      setBlogs(items);
+    }
+
+    fetchData();
+  }, []);
+
+  if (blogs.length === 0) {
     return <Loading />;
   }
 
+  const data = blogs.map((item) => item.fields);
+
   return (
     <section className="center pb-[60px]">
+      <Reveal>
+
+
+     
       <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
         <h2 className="mb-4 text-4xl sm:text-[48px] tracking-tight font-Playfair text-darkbg">
           Latest news
@@ -70,11 +79,18 @@ const News = async () => {
         >
           {data.map((blog, index) => {
             const assetId = blog.image.sys.id; // Extract the asset ID
+            console.log(blog.slug);
             const imageUrl = `https://cdn.contentful.com/assets/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}/${assetId}`;
+            console.log(imageUrl);
             return (
-              <SplideSlide key={index}>
-                <NewsCard  data={blog} image={imageUrl} key={index}/>
+
+              <div key={index}>
+
+              <SplideSlide >
+                <NewsCard data={blog} image={imageUrl} />
               </SplideSlide>
+
+              </div>
             );
           })}
         </Splide>
@@ -86,6 +102,7 @@ const News = async () => {
       >
         See all
       </Link>
+      </Reveal>
     </section>
   );
 };
